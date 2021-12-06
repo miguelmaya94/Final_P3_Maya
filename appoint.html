@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="yearpicker.css">
+    <script src="js/datepicker.js"></script>
+    <script  src="js/timepicker.js"></script>
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+<link href="https://fonts.googlea-pis.com/css2?family=Open+Sans:w-ght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+      <title>Mermaids and Tadpoles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyletwo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Mermaids & Tadpoles</label>
+      <ul>
+
+        <li><a class="active" href="index.html">Home</a></li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="appoint.html">Appointments</a></li>
+      </ul>
+</nav>
+<br/>
+<div class="containerappoint">
+  <h1>Welcome! Plase make an appointment and we will contact you. Thank you!</h1>
+  <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br>
+    <label for="cname">Child's name:</label><br>
+    <input type="text" id="cname" name="cname" value="Doe"><br>
+    <label for="cage">Child's Age:</label><br>
+    <input type="number" id="cage" name="cage" value="3"><br>
+    <p>Start Date / Time:<br />
+  <input id="start_dt" class='datepicker' size='11' title='D-MMM-YYYY' />
+  <input id="start_tm" class='timepicker' size='5'  title='HH:MM' />
+  </p>
+  <p>End Date:<br />
+  <input id="end_dt" class='datepicker' size='11' title='D-MMM-YYYY' />
+  <input id="end_tm" class='timepicker' size='5'  title='HH:MM' />
+  </p>
+  <input type="submit" value="Submit">
+  </form>
+</div>
+<footer>
+      <h4>Research purposes only / Maya Multimedia LLC</h4><br>
+    </footer>
+
+  </body>
+</html>

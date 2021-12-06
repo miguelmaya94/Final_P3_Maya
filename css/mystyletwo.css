@@ -1,0 +1,535 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+max-width: 1200px;
+font-family: 'Open Sans', sans-serif;
+}
+nav{
+  background: teal;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  top:0;
+  z-index: 1;
+}
+label.logo{
+  color: white;
+  font-size: 3rem;
+  line-height: 80px;
+  padding: 0 0px;
+  font-weight: bold;
+  font-family: 'Caveat Brush', cursive;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0;
+}
+nav ul li a{
+  color: white;
+  font-size: 1.5rem;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 0;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 3rem;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/*html body*/
+.flex{
+  font-family: 'Caveat Brush', cursive;
+  margin-top: 80px;
+  max-width: 800px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex > div {
+background-image:url('../images/ship.jpg');
+background-repeat: no-repeat;
+  max-width: 100%;
+background-size:  contain;
+  margin: 0px;
+  padding: 50%;
+  color: white;
+}
+.flex > div h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: white;
+
+}
+.flex-contain {
+  display: flex;
+  background-color: black;
+  color:white;
+  max-width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-contain p{
+  padding:50px;
+max-width: 100%;
+}
+.flex-contain > div {
+background-image:url('../images/fantasy_One.jpg');
+background-repeat: no-repeat;
+background-size:  contain;
+  width: 100%;
+height: 200px;
+  padding: 40px;
+  align-content: space-between;
+  background-position:center;
+}
+.flex-contain > div h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+}
+.flex-containertwo {
+  display: flex;
+  background-color: black;
+color:white;
+  margin-top: 50px;
+  justify-content: flex-end;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.flex-containertwo p{
+  padding:40px;
+}
+.flex-containertwo > div {
+background-image:url('../images/fantasy_Two.jpg');
+background-repeat: no-repeat;
+background-size:    contain;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 40px;
+
+  align-content: space-between;
+  background-position: center;
+}
+.flex-containertwo > div h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.flex-container {
+  display: flex;
+  background-color: black;
+color:white;
+  margin-top: 50px;
+  justify-content: flex-end;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.flex-container p{
+  padding:40px;
+}
+.flex-container > div {
+background-image:url('../images/mermaid_One.jpg');
+background-repeat: no-repeat;
+background-size:  contain;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 40px;
+  font-size: 30px;
+  align-content: space-between;
+  background-position: center;
+
+}
+.flex-container > div h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: teal;
+  color: white;
+    bottom: 0px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+.checkbtn{
+  display: block;
+}
+/*do not touch for menu*/
+@media (max-width: 858px){
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    margin: 0;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  body {
+    max-width: 100%;
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+/*do not touch for menu*/
+
+/*appointment*/
+.containerappoint{
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  color: black;
+}
+form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+  border-style: double;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+/*apppointmets*/
+
+@media screen and (min-width: 800px) {
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: teal;
+  color: white;
+    bottom: 0px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+label.logo{
+  font-size: 2rem;
+}
+nav{
+  background:teal;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  top:0;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+margin: 0;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 3rem;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+}
+/*html body*/
+
+/*about*/
+.column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+    margin-top: 50px;
+}
+.containerabout {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+/*about*/
+
+/*index body*/
+.flex{
+  margin-top: 100px;
+  max-width: 800px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex > div {
+background-image:url('../images/ship.jpg');
+background-repeat: no-repeat;
+  max-width: 800px;
+background-size:  contain;
+  margin: 0px;
+  padding: 50%;
+}
+.flex > div h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+}
+.flex-contain {
+  display: flex;
+  background-color: black;
+  color:white;
+  margin-top: 50px;
+  max-width: 800px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.flex-contain p{
+  padding:50px;
+  max-width: 100%;
+}
+.flex-contain > div {
+  background-image:url('../images/fantasy_One.jpg');
+  background-repeat: no-repeat;
+  background-size:    cover;
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+  font-size: 2.5rem;
+  align-content: space-between;
+}
+.flex-containertwo {
+  display: flex;
+  background-color:black;
+color:white;
+  margin-top: 50px;
+  justify-content: flex-end;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-containertwo p{
+  padding:40px;
+}
+.flex-containertwo > div {
+background-image:url('../images/fantasy_Two.jpg');
+background-repeat: no-repeat;
+background-size:  cover;
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+  font-size: 2.5rem;
+  align-content: space-between;
+}
+.flex-container {
+  display: flex;
+  background-color: black;
+color:white;
+  margin-top: 50px;
+  justify-content: flex-end;
+max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container p{
+  padding:40px;
+}
+.flex-container > div {
+background-image:url('../images/mermaid_One.jpg');
+background-repeat: no-repeat;
+background-size:  cover;
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+  font-size: 2.5rem;
+  align-content: space-between;
+}
+form{
+  font-size: 1.5rem;
+}
+.datepickerdropdown {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAD6CAIAAADvIroEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjM2qefiJQAAAIhJREFUOE99w4cRgDAQBLHtvzKyyWByhjKo4E8z4vs+3vc1P8+Det836nVdqOd5oh7HgXXfd9Rt21DXdUVdlgV1nmes0zShjuOIOgwDqvcete97rF3XobZti9o0DWpd16hVVaGWZYm1KArUPM9RnXOoWZahpmmKNUkS1DiOUaMoQg3DEDUIAow/RjJ3qB92TU4AAAAASUVORK5CYII=);
+  border:1px solid #888;
+  border-radius:5px;
+  padding:10px;
+  position:absolute;
+  text-align:center;
+}
+.datepickerdropdown table {
+  border-collapse:collapse;
+  margin:auto;
+}
+.datepickerdropdown input {
+  font-family:monospace;
+  border:1px solid #888;
+  border-radius:3px;
+  margin:1px;
+  padding:2px 5px;
+  text-align:center;
+}
+.datepickerdropdown table input[type=button] {
+  width:2em;
+}
+.datepickerdropdown input[type=button] {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAIAAABi9+OQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjM2qefiJQAAAElJREFUGFeNwwEGACEQQNF//6MlSRSRSMMkY86wdk+wj4e78zaz772Xcw6qioiw92atxZyTMQa9d1pr1FoppZBzJqVEjJEQwt8PXeRLuM/peRgAAAAASUVORK5CYII=);
+}
+.datepickerdropdown input[type=button]:hover {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAIAAABi9+OQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjM2qefiJQAAAFpJREFUGFdjePfuAgMIv3lzCoxfvTrK8OLFAYbnz/cyPHmyleHx480MDx+uY7h3bxnDnTsLGW7enMVw7dpkhqtXJzJcutTFcOFCG8O5c00MZ87UMZw6VUksBgDwaURPl4Jv2AAAAABJRU5ErkJggg==);
+}
+.datepickerdropdown input[type=button]:active {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAIAAABi9+OQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjM2qefiJQAAAFhJREFUGFdjOHWqkuHMmTqGc+eaGC5caGO4dKmL4erViQzXrk1muHlzFsOdOwsZ7t1bxvDw4TqGx483Mzx5spXh+fO9DC9eHGB49eoow5s3p8D43bsLpGAAr0NKhZpZNgcAAAAASUVORK5CYII=);
+  padding:2px 4px 2px 6px;
+}
+.datepickerdropdown input.selected {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAIAAABi9+OQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjM2qefiJQAAAEBJREFUGFdj+P//P8P//5+A+CkQXwfiU0C8B4jXA/EiIJ4CxO1AXAnEOUAcB8SBQOwCxGZArAnE0kDMB8QMxGIAwnRFxCnPkL8AAAAASUVORK5CYII=);
+}
+.datepickerdropdown input[type=text] {
+  background:#fff;
+  color:#000;
+}
+.datepickerdropdown input.today {
+  border:1px solid red;
+}
+.datepickerdropdown input.othermonth {
+  color:#aaa;
+  border:1px solid #bbb;
+}
+.datepickershow img {
+  border:0;
+}
+.monthDsp
+{
+width:80px;
+font-size:9px;
+}
+.daysRow
+{
+font-family:sans-serif;
+font-size:11px;
+}
+
+@media screen and (max-width: 650px) {
+  /*about*/
+  .column {
+    width: 100%;
+    display: block;
+  }
+    /*about*/
+
+}
